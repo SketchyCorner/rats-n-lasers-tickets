@@ -42,14 +42,12 @@ body:
       required: true
 
   # Hardware information
-  - type: dropdown
+  - type: input
     id: platform
     attributes:
       label: Platform
       description: Select which platform you encountered this issue on.
-      options:
-        - iOS
-        - Android
+      placeholder: iOS or Android.
     validations:
       required: true
   - type: input
