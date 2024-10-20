@@ -22,6 +22,16 @@ body:
       placeholder: v1.1.0 or latest
     validations:
       required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: UUID
+      description: DO NOT modify this field, this is your anonymous ID, if it isn't right, we wont be able to assist you with online issues.
+      placeholder: Hkp5BBRbnVYweTlNAybjJr8nrWg2
+    validations:
+      required: true
+
   - type: input
     id: level
     attributes:
@@ -30,6 +40,7 @@ body:
       placeholder: Boxed In
     validations:
       required: false
+
   - type: textarea
     id: what-happened
     attributes:
@@ -50,6 +61,7 @@ body:
       placeholder: iOS or Android.
     validations:
       required: true
+
   - type: input
     id: device-model
     attributes:
@@ -58,6 +70,7 @@ body:
       placeholder: iPhone 14 Pro, Samsung Galaxy S23, etc.
     validations:
       required: true
+
   - type: input
     id: os-version
     attributes:
