@@ -24,7 +24,7 @@ body:
       required: true
 
   - type: input
-    id: platform
+    id: firebase-uuid
     attributes:
       label: UUID
       description: DO NOT modify this field, this is your anonymous ID, if it isn't right, we wont be able to assist you with online issues.
