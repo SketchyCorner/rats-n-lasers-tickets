@@ -1,0 +1,70 @@
+name: Bug report
+description: Report a problem or any unexpected behaviors in Rats N' Lasers.
+title: "[Bug]: "
+labels:
+  - bug
+assignees:
+  - nrgbypass
+  - Aggronian
+  - Ratpancake
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report for Rats N' Lasers!
+
+  # Game-specific information
+  - type: input
+    id: gameversion
+    attributes:
+      label: Game Version
+      description: What version of Rats N' Lasers are you running? Feel free to write "latest" if unsure and on latest at the time of posting the issue.
+      placeholder: v1.1.0 or latest
+    validations:
+      required: true
+  - type: input
+    id: level
+    attributes:
+      label: What level were you playing?
+      description: Please specify the level where the issue occurred, if applicable.
+      placeholder: Boxed In
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: |
+        A short explanation of what happened, please attach screenshots or a short video capture of your issue.
+      placeholder: |
+        I was playing in the spooky forest lab and I got stuck at level 7 Toilet Sticky, I couldn't move and I just died.
+    validations:
+      required: true
+
+  # Hardware information
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Select which platform you encountered this issue on.
+      options:
+        - iOS
+        - Android
+    validations:
+      required: true
+  - type: input
+    id: device-model
+    attributes:
+      label: Device Model
+      description: Include the model of the device where the issue occurred.
+      placeholder: iPhone 14 Pro, Samsung Galaxy S23, etc.
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS Version
+      description: Please specify the OS version of the device.
+      placeholder: iOS 17, Android 14, etc.
+    validations:
+      required: true
